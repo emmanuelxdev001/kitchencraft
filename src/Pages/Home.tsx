@@ -1,7 +1,16 @@
-import React from 'react';
+import CategoryList from "./Screen/CategoryList";
+import ProductListing from "./Screen/ProductsListing";
+import Slider from "./Screen/Slider";
 
-const Home: React.FC = () => {
-  return <h1>Welcome to the Home Page</h1>;
+
+const Home = () => {
+  return (
+    <div>
+      <Slider />
+      <CategoryList />
+      <ProductListing />
+    </div>
+  );
 };
 
 export default Home;
