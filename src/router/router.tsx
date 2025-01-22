@@ -3,7 +3,7 @@ import Contact from '@/Pages/ContactUS';
 import Home from '@/Pages/Home';
 import { createBrowserRouter } from 'react-router-dom';
 
-const router = createBrowserRouter([
+const mainRouter = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
@@ -18,4 +18,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export default mainRouter;

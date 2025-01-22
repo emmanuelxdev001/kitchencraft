@@ -1,22 +1,12 @@
-import Footer from '@/Pages/Footer';
-import Header from '@/Pages/Header';
-import LandingPageContent from '@/Pages/LandingPageContent';
-import Sidebar from '@/Pages/Sidebar';
-import React from 'react';
+import { RouterProvider } from "react-router-dom";
+import mainRouter from "./router/router";
 
-const App: React.FC = () => {
+const App = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <div className="flex flex-grow">
-        <Sidebar />
-        <main className="flex-grow p-4">
-          <LandingPageContent />
-        </main>
-      </div>
-      <Footer />
+    <div className="">
+      <RouterProvider router={mainRouter} />
     </div>
   );
 };
 
-export default App; 
+export default App;
